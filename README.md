@@ -27,26 +27,39 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
-
+You have to run this command to install required packages
 ```bash
 $ npm install
 ```
 
 ## Running the app
+you have to have docker and postman install in your computer
+
+#For Dockerization the app
+```bash
+#For Dockerization the app
+$ docker-compose up
+```
 
 ```bash
-# development
-$ npm run start
+# For API gateway
+$ npm run start:dev 
 
-# watch mode
-$ npm run start:dev
+# For Auth microservice
+$ npm run start:dev auth
 
-# production mode
-$ npm run start:prod
+# For Product microservice
+$ npm run start:dev product
+
+# For Payment microservice
+$ npm run start:dev payment
 ```
 
 ## Test
-
+You can test the app using postman url
+```bash
+$ https://api.postman.com/collections/30330225-f2b0e78a-9df6-4bbc-90ac-7d39c33744dc?access_key=PMAT-01HYWVZV5PENED238ETKBXDSWQ
+```
 ```bash
 # unit tests
 $ npm run test
